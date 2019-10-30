@@ -4,6 +4,10 @@
 [![Code Quality: Javascript](https://img.shields.io/lgtm/grade/javascript/g/exceljs/exceljs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/exceljs/exceljs/context:javascript)
 [![Total Alerts](https://img.shields.io/lgtm/alerts/g/exceljs/exceljs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/exceljs/exceljs/alerts)
 
+First of all, this repository was forked from `exceljs/exceljs` with branch `1.12.0` and then replace `moment` with `dayjs` to make exceljs more lightweight.
+The reason that we don't use exceljs with version is `3.3.0` because of the size is big, it tooks around 900KB.
+So we have to create `exceljs-lightweight`.
+
 Read, manipulate and write spreadsheet data and styles to XLSX and JSON.
 
 Reverse engineered from Excel spreadsheet files as a project.
@@ -13,7 +17,7 @@ Reverse engineered from Excel spreadsheet files as a project.
 # Installation
 
 ```shell
-npm install exceljs
+npm install exceljs-lightweight
 ```
 
 # New Features!
@@ -143,14 +147,14 @@ To be clear, all contributions added to this library will be included in the lib
 The default export is a transpiled ES5 version with a Promise polyfill - this offers the highest level of compatibility.
 
 ```javascript
-var Excel = require('exceljs');
+var Excel = require('exceljs-lightweight');
 import Excel from 'exceljs';
 ```
 
 However, if you use this library on a modern node.js version (>=8) or on the frontend using a bundler (or can focus on just evergreen browsers), we recommend to use these imports:
 
 ```javascript
-const Excel = require('exceljs/modern.nodejs');
+const Excel = require('exceljs-lightweight/modern.nodejs');
 import Excel from 'exceljs/modern.browser';
 ```
 
