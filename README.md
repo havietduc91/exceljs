@@ -1,4 +1,4 @@
-# ExcelJS
+# Exceljs-lightweight
 
 [![Build Status](https://travis-ci.org/exceljs/exceljs.svg?branch=master)](https://travis-ci.org/exceljs/exceljs)
 [![Code Quality: Javascript](https://img.shields.io/lgtm/grade/javascript/g/exceljs/exceljs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/exceljs/exceljs/context:javascript)
@@ -148,14 +148,14 @@ The default export is a transpiled ES5 version with a Promise polyfill - this of
 
 ```javascript
 var Excel = require('exceljs-lightweight');
-import Excel from 'exceljs';
+import Excel from 'exceljs-lightweight';
 ```
 
 However, if you use this library on a modern node.js version (>=8) or on the frontend using a bundler (or can focus on just evergreen browsers), we recommend to use these imports:
 
 ```javascript
 const Excel = require('exceljs-lightweight/modern.nodejs');
-import Excel from 'exceljs/modern.browser';
+import Excel from 'exceljs-lightweight/modern.browser';
 ```
 
 ## Create a Workbook
